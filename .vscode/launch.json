@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/11170/OneDrive/Documents/GitHub/Competitive-Programming-new/atcoder_dp",
-      "program": "c:/Users/11170/OneDrive/Documents/GitHub/Competitive-Programming-new/atcoder_dp/build/Debug/outDebug",
+      "cwd": "c:/Users/11170/OneDrive/Documents/GitHub/Competitive-Programming-new/Graph_striver",
+      "program": "c:/Users/11170/OneDrive/Documents/GitHub/Competitive-Programming-new/Graph_striver/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
