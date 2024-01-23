@@ -179,9 +179,9 @@ bool ifCycleUndirDFS(int n, vector <vector <int>> &adj_list){
             //dfs_trav.push_back(cur_node);
             for(auto it: adj_list[cur_node]){
                 if(visited[it]==-1){
-                    st.push(make_pair(it, cur_node_par));
+                    st.push(make_pair(it, cur_node));
                     visited[it] = 1;
-                }else if(visited[it] == 1 && it!=cur_node){
+                }else if(visited[it] == 1 && it!=cur_node_par){
                     return true;
                 }
             }
@@ -273,12 +273,13 @@ bool ifCycleDirDFS(int n, vector <vector <int>> &adj_list){
             //dfs_trav.push_back(cur_node);
             for(auto it: adj_list[cur_node]){
                 if(visited[it]==-1){
-                    st.push(make_pair(it, cur_node_par));
+                    st.push(make_pair(it, cur_node));
                     visited[it] = 1;
-                }else if(visited[it] == 1 && it!=cur_node){
+                }else if(visited[it] == 1 && it!=cur_node_par){
                     return true;
                 }
             }
+            visited[cur_node] = 0;
         }
     }
     return false;
